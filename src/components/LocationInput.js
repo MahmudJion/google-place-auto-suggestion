@@ -39,7 +39,7 @@ async function handlePlaceSelect(updateQuery) {
   console.log(addressObject);
 }
 
-function SearchLocationInput() {
+function LocationInput() {
   const [query, setQuery] = useState("");
   const autoCompleteRef = useRef(null);
 
@@ -62,4 +62,4 @@ function SearchLocationInput() {
   );
 }
 
-export default SearchLocationInput;
+export default LocationInput;
