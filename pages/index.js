@@ -1,9 +1,13 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from 'next/head';
+import styles from '../styles/Home.module.css';
 import LocationInput from '../src/components/LocationInput';
 
-
 export default function Home() {
+  const handleInputChange = (value) => {
+    // Handle input change logic
+    console.log(value);
+  };
+
   return (
     <div className={styles.container}>
       <Head>
@@ -11,8 +15,8 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <LocationInput onChange={() => null} />
+        <LocationInput onChange={handleInputChange} />
       </main>
     </div>
-  )
+  );
 }
